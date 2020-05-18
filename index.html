@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome to Sedona</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="main-header">
+      <figure>
+        <img src="img/logo.png" alt="Sedona logo">
+      </figure>
+      <ul>
+        <li><a href="">Информация</a></li>
+        <li><a href="">Фото и Видео</a></li>
+        <li><a href="">Карта штата</a></li>
+        <li><a href="">Гостиницы</a></li>
+      </ul>
+    </header>
+
+    <div class="page-intro">
+      <img src="img/welcome-sedona.png" alt="welcome to Sedona" width="459" height="353">
+    </div>
+
+    <main>
+
+      <section class="reasons">
+        <header class="reasons-header">
+          <h2 class="reasons-title">
+            Седона небольшой городок в Аризоне, заслуживающий большего!
+          </h2>
+          <p>
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </header>
+
+        <div class="reasons-row">
+          <div class="reason reason-blue">
+            <h2 class="reason-title">Настоящий город</h2>
+            <span>- №1 -</span>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <figure>
+            <img src="img/reason-1-pic.jpg" alt="reason-picture" width="800" height="256">
+          </figure>
+        </div>
+
+        <div class="reasons-row">
+          <figure>
+            <img src="img/reason-2-pic.jpg" alt="reason-picture" width="800" height="256">
+          </figure>
+          <div class="reason reason-blue">
+            <h2 class="reason-title">Там есть мост дьявола</h2>
+            <span>- №2 -</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+        </div>
+
+        <div class="reasons-row reasons-row-grey">
+          <div class="reason">
+            <h2 class="reason-title">Небольшая площадь</h2>
+            <span>- №3 -</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+
+          <div class="reason">
+            <h2 class="reason-title">Красивая дорога</h2>
+            <span>- №4 -</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+
+          <div class="reason">
+            <h2 class="reason-title">Мало туристов</h2>
+            <span>- №5 -</span>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </div>
+
+        <div class="reasons-row reasons-row-white">
+          <div class="reason-housing">
+            <h1 class="reason-title">Жилье</h1>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+
+          <div class="reason-food">
+            <h1 class="reason-title">Еда</h1>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+
+          <div class="reason-sounenir">
+            <h1 class="reason-title">Сувениры</h1>
+            <p>Не только китайского, но и местного производства!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking">
+        <h2 class="booking-title"></h2>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="search-button" type="button">Поиск гостиницы в седоне</button>
+
+        <div class="booking-modal">
+          <form class="booking-form" action="post">
+
+            <div class="input-line">
+              <label for=""></label>
+              <input class="booking-calendar" id="arrival-date" type="text" name="arrival" placeholder="01 Января 2020">
+            </div>
+
+            <div class="input-line">
+              <label for=""></label>
+              <input class="booking-calendar" id="departure-date" type="text" name="departure" placeholder="14 Января 2020">
+            </div>
+
+            <div class="input-line">
+              <label for="adults">Взрослые:</label>
+              <div class="adults">
+                <button class="button-minus" type="button"></button>
+                <input type="text" name="adults" id="adults" value="2">
+                <button class="button-plus" type="button"></button>
+              </div>
+
+              <label for="children">Взрослые:</label>
+              <div class="children">
+                <button class="button-minus" type="button"></button>
+                <input type="text" name="children" id="children" value="0">
+                <button class="button-plus" type="button"></button>
+              </div>
+            </div>
+
+            <button class="form-submit-button" type="submit">Найти</button>
+          </form>
+        </div>
+
+        <div class="map">
+          <img src="img/map.jpg" alt="Sedona map" width="1200" height="593">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-contacts">
+        <a href="#">#visitsedona</a>
+        <p>тел: +7 (777) 777-77-77</p>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button social-button-twitter" href=""></a></li>
+          <li><a class="social-button social-button-facebook" href=""></a></li>
+          <li><a class="social-button social-button-youtube" href=""></a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright"></div>
+    </footer>
+  </div>
+</body>
+</html>
