@@ -21,23 +21,9 @@ body {
   background-color: #ffffff;
 }
 
-/* Global Styles*/
-
-.page-wrapper {
-  position: relative;
-  width: 1200px;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
 }
-
-.reason-blue img {
-  width: 100%;
-  height: auto;
-}
-/* End Global*/
 
 .main-header-logo {
   position: absolute;
