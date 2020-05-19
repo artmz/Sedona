@@ -9,15 +9,17 @@
 <body>
   <div class="wrapper">
     <header class="main-header">
-      <figure>
-        <img src="img/logo.png" alt="Sedona logo">
-      </figure>
-      <ul>
-        <li><a href="">Информация</a></li>
-        <li><a href="">Фото и Видео</a></li>
-        <li><a href="">Карта штата</a></li>
-        <li><a href="">Гостиницы</a></li>
-      </ul>
+      <nav class="main-navigation">
+        <figure class="main-header-logo">
+          <img src="img/logo.png" alt="Sedona logo">
+        </figure>
+        <ul class="main-navigation-list">
+          <li><a href="">Информация</a></li>
+          <li><a href="">Фото и Видео</a></li>
+          <li><a href="">Карта штата</a></li>
+          <li><a href="">Гостиницы</a></li>
+        </ul>
+    </nav>
     </header>
 
     <div class="page-intro">
@@ -27,14 +29,14 @@
     <main>
 
       <section class="reasons">
-        <header class="reasons-header">
-          <h2 class="reasons-title">
+        <div class="reasons-header">
+          <h1 class="reasons-title">
             Седона небольшой городок в Аризоне, заслуживающий большего!
-          </h2>
+          </h1>
           <p>
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
-        </header>
+        </div>
 
         <div class="reasons-row">
           <div class="reason reason-blue">
@@ -89,7 +91,7 @@
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
 
-          <div class="reason-sounenir">
+          <div class="reason-souvenir">
             <h1 class="reason-title">Сувениры</h1>
             <p>Не только китайского, но и местного производства!</p>
           </div>
@@ -105,28 +107,28 @@
           <form class="booking-form" action="post">
 
             <div class="input-line">
-              <label for=""></label>
+              <label for="arrival-date">Дата заезда</label>
               <input class="booking-calendar" id="arrival-date" type="text" name="arrival" placeholder="01 Января 2020">
             </div>
 
             <div class="input-line">
-              <label for=""></label>
+              <label for="departure-date">Дата выезда</label>
               <input class="booking-calendar" id="departure-date" type="text" name="departure" placeholder="14 Января 2020">
             </div>
 
             <div class="input-line">
               <label for="adults">Взрослые:</label>
               <div class="adults">
-                <button class="button-minus" type="button"></button>
+                <button class="button-minus" type="button">-</button>
                 <input type="text" name="adults" id="adults" value="2">
-                <button class="button-plus" type="button"></button>
+                <button class="button-plus" type="button">+</button>
               </div>
 
               <label for="children">Взрослые:</label>
               <div class="children">
-                <button class="button-minus" type="button"></button>
+                <button class="button-minus" type="button">-</button>
                 <input type="text" name="children" id="children" value="0">
-                <button class="button-plus" type="button"></button>
+                <button class="button-plus" type="button">+</button>
               </div>
             </div>
 
