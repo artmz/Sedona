@@ -1,13 +1,3 @@
-// шрифт
-@font-face {
-  font-family: 'PT Sans';
-  src: local('PT Sans'),
-       url('fonts/web/ptsans.woff') format('woff'),
-       url('fonts/web/ptsans.woff2') format('woff2'),
-       url('fonts/web/ptsansbold.woff') format('woff'),
-       url('fonts/web/ptsansbold.woff2') format('woff2');
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -47,14 +37,12 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background: grey;
 }
 
 .page-wrapper {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
-
+  box-shadow: 0 -5px 9px 2px #dbdbdb;
 }
 
 a {
@@ -173,5 +161,187 @@ a {
   font-weight: normal;
   line-height: 26px;
   text-align: center;
+  color: #000000;
+}
+
+.reasons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reason {
+  width: 400px;
+  height: 256px;
+  text-align: center;
+}
+
+.reason-1,
+.reason-2 {
+  background: #81b3d2;
+  color: #ffffff;
+}
+
+.reason-3,
+.reason-4,
+.reason-5 {
+  background: #eeeeee;
+  color: #000000;
+}
+
+.reason-photo {
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 256px;
+}
+
+.reason h2{
+  margin: 0;
+  padding-top: 46px;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 26px;
+}
+
+.reason span {
+  display: inline-block;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 26px;
+}
+
+.reason p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 26px;
+}
+
+.reason-housing,
+.reason-food,
+.reason-souvenir {
+  width: 400px;
+  min-height: 330px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.reason-housing {
+  background-image: url("../svg/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: 162px 60px;
+}
+
+.reason-housing h2 {
+  padding-top: 138px;
+}
+
+.reason-food {
+  background-image: url("../svg/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: 162px 60px;
+}
+
+.reason-food h2 {
+  padding-top: 138px;
+}
+
+.reason-souvenir {
+  background-image: url("../svg/icon-food.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: 162px 60px;
+}
+
+.reason-souvenir h2 {
+  padding-top: 138px;
+}
+
+.booking {
+  background: #ffffff;
+}
+
+.booking h2 {
+  margin: 0;
+  padding-top: 58px;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+}
+.booking p {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 58px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}
+
+.search-button {
+  display: block;
+  margin: 0 auto;
+  width: 568px;
+  height: 86px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #766357;
+}
+
+.map {
+  width: 1200px;
+  height: 593px;
+}
+
+.booking-modal {
+  display: none;
+}
+
+.footer {
+  min-height: 120px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 120px;
+  background: rgba(255, 255, 255, 0.9);
+
+}
+
+.hash {
+  display: inline-block;
+  margin: 0;
+  margin-top: 34px;
+  padding: 0;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.phone {
+  margin: 0;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
   color: #000000;
 }
