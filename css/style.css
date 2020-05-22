@@ -302,6 +302,16 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background: #766357;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #604e43;
+}
+
+.search-button:active {
+  background: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .map {
@@ -309,9 +319,13 @@ a {
   height: 593px;
 }
 
+/*Модальное окно*/
+
 .booking-modal {
   display: none;
 }
+
+/*Футер*/
 
 .footer {
   min-height: 120px;
@@ -320,15 +334,21 @@ a {
 .footer {
   display: flex;
   justify-content: flex-start;
-  min-height: 120px;
+  min-height: 124px;
+  padding: 36px 0;
   background: rgba(255, 255, 255, 0.9);
+}
 
+.footer-contacts {
+  min-width: 325px;
+  margin-right: 176px;
+  padding-left: 124px;
 }
 
 .hash {
   display: inline-block;
   margin: 0;
-  margin-top: 34px;
+  margin-bottom: 5px;
   padding: 0;
   font-size: 21px;
   font-weight: bold;
@@ -342,6 +362,58 @@ a {
   margin: 0;
   font-size: 21px;
   font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
+
+.footer-social {
+  width: 150px;
+  margin-right: 215px;
+}
+
+.footer-social ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background: #81b3d2;
+}
+
+.social-button:hover {
+  background: #669ec0;
+}
+
+.social-button:active {
+  background: #669ec0;
+}
+
+.social-button:active path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social li:not(:last-child) {
+  margin-right: 6px;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+}
+
+.footer-copyright span {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: normal;
   line-height: 26px;
   color: #000000;
 }
